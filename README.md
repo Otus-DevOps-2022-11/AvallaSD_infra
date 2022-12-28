@@ -10,9 +10,9 @@ someinternalhost_IP = 10.156.0.3
 # Command for connecting to someinternalhost
 ssh -J username@bastion username@someinternalhost
 
-# .ssh/config for one-command connection: ssh someinternalhost
-Host someinternalhost
-    HostName someinternalhost
-    User username
+## .ssh/config for one-command connection: ssh someinternalhost
+    Host someinternalhost
+        HostName someinternalhost
+        User username
 
-    ProxyJump username@bastion
+        ProxyJump username@bastion
