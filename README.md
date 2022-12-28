@@ -3,8 +3,8 @@ AvallaSD Infra repository
 
 # HW6
 ## IPs for vpn connection
-bastion_IP = 35.198.167.169
-someinternalhost_IP = 10.156.0.3
+bastion_IP = 158.160.34.213
+someinternalhost_IP = 10.128.0.34
 
 # HW5
 ## Command for connecting to someinternalhost
