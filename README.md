@@ -12,6 +12,6 @@ ssh -J username@bastion username@someinternalhost
 
         ProxyJump username@bastion
 
-# IPs for vpn connection
+## IPs for vpn connection
 bastion_IP = 158.160.34.213
 someinternalhost_IP = 10.128.0.34
