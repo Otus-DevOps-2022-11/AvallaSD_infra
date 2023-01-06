@@ -18,5 +18,5 @@ someinternalhost_IP = 10.128.0.34
 
 # HW6
 ## Reddit IP and port
-testapp_IP = 84.252.128.128
+testapp_IP = 51.250.64.133
 testapp_port = 9292
