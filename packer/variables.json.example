@@ -1,0 +1,5 @@
+{
+    "folder_id": "example",
+    "source_image_family": "example",
+    "service_account_key_file": "key.json"
+}
