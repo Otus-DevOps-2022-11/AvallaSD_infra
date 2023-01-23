@@ -1,6 +1,11 @@
 # AvallaSD_infra
 AvallaSD Infra repository
 
+#HW8
+Main HW done 
++ set up load balancer with nginx redirecting on one of reddit-app VMs
+If one dies, reddit app is still able on loadbalancer's external IP
+
 # HW7 
 Main home task done 
 
