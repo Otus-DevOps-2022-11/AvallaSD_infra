@@ -1,16 +1,21 @@
 # AvallaSD_infra
 AvallaSD Infra repository
 
+# HW10
+Main HW done
+First time executing playbook we already have git repo cloned, so output is "success", because there is nothing to change here
+After clearing repo, playbook execution ends with "change" output, because now repo is absent, so the playbook needs to clone it, which means make a change
+
 # HW9
 Main HW done
 
 # HW8
-Main HW done 
+Main HW done
 + set up load balancer with nginx redirecting on one of reddit-app VMs
 If one dies, reddit app is still able on loadbalancer's external IP
 
-# HW7 
-Main home task done 
+# HW7
+Main home task done
 
 # HW6
 ## Reddit IP and port
