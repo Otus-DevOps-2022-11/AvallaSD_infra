@@ -1,8 +1,8 @@
 {
     "variables": {
-	    "folder_id": "",
-	    "source_image_family": "",
-	    "service_account_key_file": ""
+        "folder_id": "",
+        "source_image_family": "",
+        "service_account_key_file": ""
     },
     "builders": [
         {
@@ -14,14 +14,13 @@
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
             "platform_id": "standard-v1",
-	        "use_ipv4_nat": "true"
+            "use_ipv4_nat": "true"
         }
     ],
     "provisioners": [
         {
-            "type": "shell",
-            "script": "scripts/install_ruby.sh",
-            "execute_command": "sudo {{.Path}}"
+            "type": "ansible",
+            "playbook_file": "ansible/packer_app.yml"
         }
     ]
 }
