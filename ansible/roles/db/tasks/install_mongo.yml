@@ -1,12 +1,12 @@
-- name: Add APT key
+- name: Add an Apt signing key, uses whichever key is at the URL
   apt_key:
-    id: "EA312927"
-    keyserver: keyserver.ubuntu.com
+    url: https://www.mongodb.org/static/pgp/server-3.2.asc
+    state: present
   tags: install
 
 - name: Add APT repository
   apt_repository:
-    repo: deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
+    repo: deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
     state: present
   tags: install
 
@@ -20,5 +20,4 @@
   systemd:
     name: mongod
     enabled: yes
-    state: started
   tags: install
